@@ -1,4 +1,4 @@
-# muscle-contusion-ml-classification
+# contusion-ml-classification
 A machine learning pipeline for classifying recovery stages of muscle contusion using SVM, XGBoost, and LightGBM models, combined with various feature selection methods (PCA, RFE, mRMR, Relief). Subsequently, methods assessing feature importances attempt to explain the results.
 
 ---
@@ -30,7 +30,7 @@ Model interpretability using SHAP values and feature importance plots
 ---
 ## File Structure
 ```
-muscle-contusion-ml-classification
+contusion-ml-classification
 ├── README.md
 ├── requirements.txt
 ├── src
