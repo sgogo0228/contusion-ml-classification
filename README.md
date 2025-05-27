@@ -8,17 +8,23 @@ A machine learning pipeline for classifying recovery stages of muscle contusion 
 - 4 feature reduction methods: PCA, RFE, mRMR, Relief
 - Accuracy evaluation and confusion matrix
 - SHAP explainability for model interpretation
+- Hyperparameter tuning for optimal workflow
 - Modular code structure for easy expansion
 
 ---
 ## Modules
 
-- src/train_and_save_results.py:\
+- src/train_and_save_results.py:  
 Train multiple classification models with various feature selection techniques and save results
-- src/plot_results.py:\
+
+- src/plot_results.py:  
 Visualize model performances from saved .npy result files
-- src/importance_visualization.py:\
+
+- src/importance_visualization.py:  
 Model interpretability using SHAP values and feature importance plots
+
+- src/hyperparameter_tuning.py:  
+Tun Hyperparameters of a tree-based classifier (LGBM) for the optimal workflow (MinAbs_data_regularization + PCA + LGBM) proposed in my dissertation
 
 ---
 ## Example Outputs
@@ -29,17 +35,19 @@ Model interpretability using SHAP values and feature importance plots
 
 ---
 ## File Structure
-```
+```python
 contusion-ml-classification
 ├── README.md
 ├── requirements.txt
 ├── src
 │   ├── train_and_save_results.py
 │   ├── plot_results.py
-│   └── shap_visualization.py
+│   ├── shap_visualization.py
+│   └── hyperparameter_tuning.py
 ├── data
-│   ├── data.xlsx
-│   └── label.xlsx
+│   ├── data.xlsx # sample contusion data
+│   ├── label.xlsx # sample labels of corresponding contusion data
+│   └── fieldname.xlsx # feature names of the data
 └── examples
     ├── svm_acc.jpg
     ├── relief_importance.jpg
@@ -68,6 +76,7 @@ If installation fails, please don't use mrmr as a feature reduction method and/o
 python src/train_and_save_results.py
 python src/plot_results.py
 python src/shap_visualization.py
+python src/hyperparameter_tuning.py
 ```
 
 ---
