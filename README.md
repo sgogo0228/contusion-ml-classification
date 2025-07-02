@@ -1,5 +1,6 @@
-# contusion-ml-classification
-A machine learning pipeline for classifying recovery stages of muscle contusion using SVM, XGBoost, and LightGBM models, combined with various feature selection methods (PCA, RFE, mRMR, Relief). Subsequently, methods assessing feature importances attempt to explain the results.
+# 透過機器學習之挫傷肌肉分類 | Muscle Contusion Classification by ML
+利用 SVM、XGBoost 與 LightGBM 模型結合多種特徵選擇方法（PCA、RFE、mRMR、Relief），用於分類肌肉挫傷的恢復階段之一個機器學習流程。接著透過特徵重要性分析方法來解釋模型結果。該模型在辨識肌肉挫傷階段上達到 93% 的準確率。  
+A machine learning pipeline for classifying recovery stages of muscle contusion using SVM, XGBoost, and LightGBM models, combined with various feature selection methods (PCA, RFE, mRMR, Relief). Subsequently, methods assessing feature importances attempt to explain the results. The accuracy achieves to 93% for identifying the stages of muscle contusion.
 
 ---
 ## Features
